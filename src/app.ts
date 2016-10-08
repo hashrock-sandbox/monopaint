@@ -33,11 +33,7 @@ export class App extends Vue {
   }
 
   updateMousePos(ev: MouseEvent){
-    var rect = this.canvas.getBoundingClientRect();
-    this.before = {
-      x: ev.clientX - rect.left,
-      y: ev.clientY - rect.top
-    }
+    this.before = this.getPoint(ev)
   }
 
   getPoint(ev: MouseEvent): Point{

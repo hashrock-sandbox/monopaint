@@ -9,7 +9,7 @@ class Point{
 @Component({
   template: `
     <div>
-      <canvas id="canv" @mousemove="mousemove" @mouseup="mouseup" @mousedown="mousedown" width="600px" height="600px"></canvas>
+      <canvas id="canv" @mousemove="mousemove" @mouseup="mouseup" @mousedown="mousedown" @mouseout="mouseup" width="600px" height="600px"></canvas>
       <div v-for="item in bindList" :class="{'selected': $index === bindIndex}">
         <div v-if="item">
           x: {{item.x}}, y:{{item.y}}

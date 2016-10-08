@@ -10654,7 +10654,7 @@ var App = (function (_super) {
     };
     App = __decorate([
         vue_class_component_1.default({
-            template: "\n    <div>\n      <canvas id=\"canv\" @mousemove=\"mousemove\" @mouseup=\"mouseup\" @mousedown=\"mousedown\" width=\"600px\" height=\"600px\"></canvas>\n      <div v-for=\"item in bindList\" :class=\"{'selected': $index === bindIndex}\">\n        <div v-if=\"item\">\n          x: {{item.x}}, y:{{item.y}}\n        </div>\n        <div v-if=\"!item\">\n          \u306A\u3057\n        </div>\n      </div>\n      <div style=\"border: 1px solid white; margin: 2em 0\">\n        b: \u30D6\u30E9\u30B7<br>\n        e: \u6D88\u3057\u30B4\u30E0<br>\n        1-5: \u6D88\u5931\u70B9\u306E\u9078\u629E\n      </div>\n    </div>\n  "
+            template: "\n    <div>\n      <canvas id=\"canv\" @mousemove=\"mousemove\" @mouseup=\"mouseup\" @mousedown=\"mousedown\" @mouseout=\"mouseup\" width=\"600px\" height=\"600px\"></canvas>\n      <div v-for=\"item in bindList\" :class=\"{'selected': $index === bindIndex}\">\n        <div v-if=\"item\">\n          x: {{item.x}}, y:{{item.y}}\n        </div>\n        <div v-if=\"!item\">\n          \u306A\u3057\n        </div>\n      </div>\n      <div style=\"border: 1px solid white; margin: 2em 0\">\n        b: \u30D6\u30E9\u30B7<br>\n        e: \u6D88\u3057\u30B4\u30E0<br>\n        1-5: \u6D88\u5931\u70B9\u306E\u9078\u629E\n      </div>\n    </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], App);

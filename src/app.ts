@@ -16,7 +16,12 @@ class Point{
         </div>
         <div v-if="!item">
           なし
-        </div>        
+        </div>
+      </div>
+      <div style="border: 1px solid white; margin: 2em 0">
+        b: ブラシ<br>
+        e: 消しゴム<br>
+        1-5: 消失点の選択
       </div>
     </div>
   `
@@ -79,6 +84,15 @@ export class App extends Vue {
       case "5":
         this.bindIndex = 4
         break;
+      case "b":
+        this.context.lineWidth = 1;
+        this.context.strokeStyle = "black";
+        break;
+      case "e":
+        this.context.lineWidth = 20;
+        this.context.strokeStyle = "white";
+        break;
+      
 
     }
   }
